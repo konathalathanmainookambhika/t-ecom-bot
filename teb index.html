@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>T-Ecom-Bot</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:sans-serif;background:#0f1923;color:#e0e0e0}.sc{display:none;padding:15px}.sc.active{display:block}.hd{text-align:center;color:#fff;margin-bottom:18px}.hd h1{font-size:1.6em;color:#667eea}.hd p{font-size:.85em;color:#aaa}.btn{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border:none;padding:11px 26px;border-radius:22px;cursor:pointer;font-weight:700;margin:4px}.cd{background:#1a2332;border-radius:11px;padding:16px;margin-bottom:14px;border:1px solid #2a3a4a}.ag{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:10px}.ac{background:#1a2332;border-radius:10px;padding:12px;border:1px solid #2a3a4a}.mv{font-size:1.4em;font-weight:700;color:#667eea}.sb{display:inline-block;padding:2px 10px;border-radius:14px;font-size:.72em;font-weight:700}.sa{background:rgba(76,175,80,.2);color:#4caf50;border:1px solid #4caf50}.st{background:rgba(255,152,0,.2);color:#ff9800;border:1px solid #ff9800}.sm{background:rgba(33,150,243,.2);color:#2196f3;border:1px solid #2196f3}.sr{background:rgba(76,175,80,.2);color:#4caf50;border:1px solid #4caf50}.se{background:rgba(244,67,54,.2);color:#f44336;border:1px solid #f44336}.scp{background:rgba(255,152,0,.2);color:#ff9800;border:1px solid #ff9800}
+.ctrl{display:grid;grid-template-columns:1fr 1fr;gap:11px;max-width:1800px;margin:0 auto}@media(max-width:1100px){.ctrl{grid-template-columns:1fr}}
+.cpan{display:flex;flex-direction:column;height:calc(100vh - 150px);min-height:460px;background:#1a2332;border-radius:11px;border:1px solid #2a3a4a}.cbh{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:9px 12px;border-radius:11px 11px 0 0;font-weight:700;font-size:.8em;display:flex;justify-content:space-between;align-items:center}.cbm{flex:1;overflow-y:auto;padding:11px;background:#0d1520;font-size:.84em}.mg{margin-bottom:6px;padding:8px 11px;border-radius:9px;max-width:84%;line-height:1.4}.mu{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;margin-left:auto;text-align:right}.ma{background:#1a2332;border:1px solid #2a3a4a;color:#e0e0e0}.ms{background:rgba(255,193,7,.1);border:1px solid rgba(255,193,7,.3);text-align:center;max-width:100%;font-size:.73em;color:#ffc107}.cbi{padding:8px;background:#1a2332;display:flex;gap:6px;border-top:1px solid #2a3a4a}.cinp{flex:1;padding:8px 12px;border:1px solid #2a3a4a;border-radius:18px;background:#0d1520;color:#e0e0e0;outline:none;font-size:.88em}.cinp:focus{border-color:#667eea}.sbtn{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border:none;padding:8px 16px;border-radius:18px;cursor:pointer;font-weight:700;font-size:.8em}.sbtn:disabled{opacity:.4}.qa{display:flex;gap:4px;padding:4px 7px;background:#141e2b;flex-wrap:wrap;justify-content:center}.qb{padding:3px 8px;border-radius:10px;border:1px solid #2a3a4a;background:#1a2332;cursor:pointer;font-size:.68em;color:#aaa}.qb:hover{background:#667eea;color:#fff}
+.rpan{display:flex;flex-direction:column;gap:9px;height:calc(100vh - 150px);min-height:460px;overflow-y:auto}.pnl{background:#1a2332;border-radius:11px;border:1px solid #2a3a4a;overflow:hidden}.pnlh{background:#1e2d3d;padding:6px 10px;font-weight:700;font-size:.75em;display:flex;justify-content:space-between;color:#fff}.pnlb{padding:7px;font-size:.75em;max-height:190px;overflow-y:auto}
+.ags{display:flex;align-items:center;gap:6px;padding:3px 6px;margin:2px 0;border-radius:4px;font-size:.75em}.ags.p{background:#141e2b;color:#555}.ags.v{background:rgba(255,193,7,.12);color:#ffc107;border-left:3px solid #ffc107}.ags.d{background:rgba(76,175,80,.1);color:#4caf50;border-left:3px solid #4caf50}.ags.x{background:rgba(244,67,54,.1);color:#f44336;border-left:3px solid #f44336}.asc{font-weight:700;font-size:.75em;margin-left:auto}
+.cgrid{display:grid;grid-template-columns:repeat(20,1fr);gap:2px;padding:5px}.cdot{width:100%;aspect-ratio:1;border-radius:2px}.cdot:hover{transform:scale(1.5)}.da{background:#4caf50}.dp{background:#ffc107;animation:pl 1.5s infinite}.de{background:#f44336}.dr{background:#2196f3}.dn{background:#ff9800}@keyframes pl{50%{opacity:.4}}
+.ae{padding:2px 0;border-bottom:1px solid #1e2d3d;font-size:.68em;font-family:monospace;color:#aaa}
+.mr{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid #1e2d3d;font-size:.76em}.ml{color:#aaa}.mv2{font-weight:700}.gd{color:#4caf50}.wr{color:#ff9800}.bd{color:#f44336}.bl{color:#667eea}
+.tks{display:flex;gap:3px;flex-wrap:wrap;margin:4px 0}.tki{padding:2px 6px;border-radius:7px;font-size:.66em;border:1px solid #2a3a4a;color:#555}.tkc{border-color:#667eea;color:#667eea;background:rgba(102,126,234,.1)}.tkd{border-color:#4caf50;color:#4caf50}
+.sopb{background:rgba(102,126,234,.1);border:1px solid rgba(102,126,234,.3);border-radius:6px;padding:6px;margin:4px 0;font-size:.76em}
+.decb{background:rgba(76,175,80,.05);border:1px solid rgba(76,175,80,.2);border-radius:6px;padding:7px;margin:5px 0}
+.tmb{height:3px;background:#2a3a4a;overflow:hidden}.tmf{height:100%;background:linear-gradient(90deg,#4caf50,#ffc107,#f44336);width:0%;transition:width 1s linear}
+.dot{display:inline-block;padding:6px 10px;background:#1a2332;border:1px solid #2a3a4a;border-radius:8px}.dot span{height:5px;width:5px;background:#667eea;border-radius:50%;display:inline-block;margin:0 2px;animation:bn 1.4s infinite both}.dot span:nth-child(1){animation-delay:-.32s}.dot span:nth-child(2){animation-delay:-.16s}@keyframes bn{0%,80%,100%{transform:scale(0)}40%{transform:scale(1)}}
+.ld{width:6px;height:6px;background:#4caf50;border-radius:50%;display:inline-block;margin-right:3px;animation:lp 2s infinite}@keyframes lp{50%{opacity:.3}}
+.ldd{width:100%;padding:8px;border-radius:6px;border:1px solid #2a3a4a;background:#0d1520;color:#e0e0e0;margin:6px 0}
+.tbb{display:flex;background:#0d1520;border-radius:7px 7px 0 0}.tbn{flex:1;padding:6px;text-align:center;font-size:.68em;font-weight:700;cursor:pointer;background:#141e2b;color:#aaa;border:none}.tbn.on{background:#1a2332;color:#667eea;border-bottom:2px solid #667eea}.tbc{display:none;padding:7px;max-height:250px;overflow-y:auto}.tbc.on{display:block}
+.rc{border:2px solid #2a3a4a;border-radius:14px;padding:20px;text-align:center;background:#1a2332}.rok{border-color:#4caf50}.rtt{border-color:#ff9800}
+.tl{position:relative;padding-left:20px;margin:10px 0}.tl::before{content:"";position:absolute;left:7px;top:0;bottom:0;width:2px;background:#667eea}.ti{position:relative;margin-bottom:7px;padding:7px;background:#141e2b;border-radius:5px;font-size:.76em;border:1px solid #1e2d3d}.ti::before{content:"";position:absolute;left:-17px;top:10px;width:6px;height:6px;border-radius:50%;background:#667eea}
+.inact-opts{display:none;padding:10px;text-align:center;background:rgba(255,193,7,.1);border:1px solid rgba(255,193,7,.3);border-radius:8px;margin:6px 8px}
+.audit-score{background:linear-gradient(135deg,rgba(102,126,234,.15),rgba(118,75,162,.15));border:2px solid #667eea;border-radius:12px;padding:16px;text-align:center;margin:12px 0}
+.audit-score .score-num{font-size:2.8em;font-weight:700;color:#667eea}
+.audit-score .score-label{font-size:.85em;color:#aaa;margin-top:4px}
+.tt-box{background:rgba(255,152,0,.1);border:1px solid rgba(255,152,0,.3);border-radius:8px;padding:8px;margin:6px 0;display:none;text-align:center}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:#2a3a4a}@media(max-width:768px){.ctrl{grid-template-columns:1fr}.cpan,.rpan{height:auto;min-height:350px}}
+</style></head><body>
+
+<div class="sc active" id="s1">
+<div class="hd"><h1>T-Ecom-Bot Seller Dashboard</h1><p>AI Marketplace Governance Engine | <span class="ld"></span>Online</p></div>
+<div class="cd"><h2 style="color:#667eea;margin-bottom:10px">Business Intelligence</h2>
+<div class="ag">
+<div class="ac"><h3 style="color:#667eea">Account Health</h3><div class="mv">98.5%</div><p style="color:#4caf50;font-size:.78em">No violations</p></div>
+<div class="ac"><h3 style="color:#667eea">Inventory</h3><div class="mv">87%</div><p style="color:#ff9800;font-size:.78em">3 low stock</p></div>
+<div class="ac"><h3 style="color:#667eea">Revenue</h3><div class="mv">&#x20B9;20.4L</div><p style="color:#4caf50;font-size:.78em">+18%</p></div>
+<div class="ac"><h3 style="color:#667eea">Listing SEO</h3><div class="mv">92%</div><p style="color:#4caf50;font-size:.78em">CVR:8.2%</p></div>
+<div class="ac"><h3 style="color:#667eea">Ads ROAS</h3><div class="mv">3.2x</div><p style="color:#4caf50;font-size:.78em">CTR:2.8%</p></div>
+<div class="ac"><h3 style="color:#667eea">Compliance</h3><div class="mv">100%</div><p style="color:#4caf50;font-size:.78em">All clear</p></div>
+</div></div>
+<div style="text-align:center;margin-top:16px"><button class="btn" onclick="go(2)">Need Help? Create Support Case</button></div>
+</div>
+
+<div class="sc" id="s2">
+<div class="hd"><h1>Create Support Case</h1><p>AI Engine processes your request</p></div>
+<div class="cd" style="max-width:700px;margin:0 auto">
+<div style="margin:10px 0"><label style="color:#aaa;font-weight:700">Language:</label><select id="lSel" class="ldd"><option value="en">English</option><option value="hi">Hindi</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="kn">Kannada</option><option value="ml">Malayalam</option><option value="bn">Bengali</option><option value="mr">Marathi</option><option value="gu">Gujarati</option><option value="pa">Punjabi</option></select></div>
+<div style="margin:10px 0"><label style="color:#aaa;font-weight:700">Category:</label><select id="cCat" class="ldd"><option>Account Health Issue</option><option>Listing Suspension</option><option>Inventory Management</option><option>Payment and Financial</option><option>Returns and Refunds</option><option>Order Processing</option><option>Compliance and Policy</option></select></div>
+<div style="margin:10px 0"><label style="color:#aaa;font-weight:700">Issue:</label><textarea id="cDesc" rows="3" style="width:100%;padding:8px;border-radius:6px;border:1px solid #2a3a4a;background:#0d1520;color:#e0e0e0" placeholder="Describe issue..."></textarea></div>
+<div style="text-align:center"><button class="btn" onclick="mkCase()">Submit &amp; Launch AI Agents</button></div>
+</div>
+<div style="text-align:center;margin-top:8px"><button class="btn" onclick="go(1)" style="background:rgba(255,255,255,.1);padding:6px 14px;font-size:.8em">Back</button></div>
+</div>
+
+<div class="sc" id="s3">
+<div class="hd"><h1>T-Ecom-Bot Control Room</h1>
+<p>Case #<span id="cNum">0</span> | <span id="cLn">English</span> | <span class="sb sa" id="cSt">Active</span> | <span id="iTmr" style="font-size:.76em;color:#aaa">Idle:0:00/5:00</span></p></div>
+<div class="ctrl">
+<div class="cpan">
+<div class="cbh"><div>Seller Chat - <span id="cCtL">Support</span></div><div style="font-size:.73em"><span class="ld"></span><span id="rTm">Ready</span></div></div>
+<div class="cbm" id="cMs"></div>
+<div class="inact-opts" id="inactOpts"><p style="color:#ffc107;font-weight:700;margin-bottom:6px">Chat inactive. What would you like to do?</p><button class="btn" onclick="continueChat()" style="background:linear-gradient(135deg,#4caf50,#2e7d32);font-size:.78em;padding:8px 18px">Continue Chat</button> <button class="btn" onclick="closeCaseInact()" style="background:linear-gradient(135deg,#f44336,#c62828);font-size:.78em;padding:8px 18px">Close Case</button></div>
+<div class="qa" id="qaBar"><button class="qb" onclick="qS('Options?')">Options</button><button class="qb" onclick="qS('Detail please')">Detail</button><button class="qb" onclick="qS('Next steps?')">Steps</button><button class="qb" onclick="mkRes()">Resolved</button><button class="qb" onclick="reqH()">Human</button></div>
+<div class="cbi" id="cbiBar"><input class="cinp" id="cIn" placeholder="Type message..." onkeypress="if(event.key==='Enter')sndM()"><button class="sbtn" id="sBn" onclick="sndM()">Send</button></div>
+<div class="tmb"><div class="tmf" id="tmF"></div></div>
+</div>
+<div class="rpan">
+<div class="pnl"><div class="pnlh"><span>Live Agent Activity</span><span id="pipSt" class="sb sa" style="font-size:.66em">Idle</span></div>
+<div class="pnlb">
+<div class="ags p" id="ag0">&#x1F310; Lang/Emotion<span class="asc" id="as0">-</span></div>
+<div class="ags p" id="ag1">&#x1F50D; Intent<span class="asc" id="as1">-</span></div>
+<div class="ags p" id="ag2">&#x1F4D8; SOP Retrieval<span class="asc" id="as2">-</span></div>
+<div class="ags p" id="ag3">&#x1F4DA; History<span class="asc" id="as3">-</span></div>
+<div class="ags p" id="ag4">&#x26A0; Risk<span class="asc" id="as4">-</span></div>
+<div class="ags p" id="ag5">&#x1F6E1; Governance<span class="asc" id="as5">-</span></div>
+<div class="ags p" id="ag6">&#x1F3AB; Ticketing<span class="asc" id="as6">-</span></div>
+<div class="ags p" id="ag7">&#x1F4DD; Audit<span class="asc" id="as7">-</span></div>
+</div></div>
+<div class="pnl" style="flex:1">
+<div class="tbb"><button class="tbn on" onclick="stb(this,'t1')">Case Status</button><button class="tbn" onclick="stb(this,'t2')">80 Cases</button><button class="tbn" onclick="stb(this,'t3')">Metrics</button><button class="tbn" onclick="stb(this,'t4')">Audit</button></div>
+<div class="tbc on" id="t1"><b style="color:#667eea;font-size:.76em">Case State:</b><div class="tks" id="tkS"><span class="tki tkc">Created</span><span class="tki">Under Review</span><span class="tki">Pending Seller Action</span><span class="tki">Company Pending Action</span><span class="tki">Escalated</span><span class="tki">Resolved</span><span class="tki">Closed</span></div><div class="tt-box" id="ttBox"><div style="color:#aaa;font-size:.72em">Trouble Ticket Created</div><div style="font-size:1.2em;font-weight:700;color:#ff9800" id="ttNumShow">--</div><div style="color:#777;font-size:.68em" id="ttPriInfo"></div></div><div id="sopP"><div class="sopb" style="color:#667eea">Awaiting case...</div></div><div id="decP"></div></div>
+<div class="tbc" id="t2"><div style="display:flex;justify-content:space-between;font-size:.7em;margin-bottom:4px"><span style="color:#4caf50">Active:<b id="gA">0</b></span><span style="color:#ffc107">Process:<b id="gP">0</b></span><span style="color:#f44336">Esc:<b id="gE">0</b></span><span style="color:#2196f3">Done:<b id="gR">0</b></span></div><div class="cgrid" id="cG"></div><div style="font-size:.66em;color:#555;text-align:center">80 concurrent cases | ACHT ~4min | 24/7</div></div>
+<div class="tbc" id="t3"><b style="color:#667eea;font-size:.76em">AI Performance</b><div class="mr"><span class="ml">Concurrent Capacity</span><span class="mv2 gd">80</span></div><div class="mr"><span class="ml">Avg Handle Time</span><span class="mv2 gd">~4 min</span></div><div class="mr"><span class="ml">Resolution Rate</span><span class="mv2 gd" id="xR">--</span></div><div class="mr"><span class="ml">Escalation Rate</span><span class="mv2 wr" id="xE">0%</span></div><div class="mr"><span class="ml">Intent Accuracy</span><span class="mv2 gd" id="xI">--</span></div><div class="mr"><span class="ml">SOP Match</span><span class="mv2 gd" id="xS">--</span></div><div class="mr"><span class="ml">Safety Score</span><span class="mv2 gd">99.8%</span></div><div class="mr"><span class="ml">Active Language</span><span class="mv2 bl" id="xLang">--</span></div></div>
+<div class="tbc" id="t4"><div id="auL" style="font-family:monospace"></div></div>
+</div></div></div>
+<div style="text-align:center;margin-top:10px"><button class="btn" onclick="endC()" style="background:linear-gradient(135deg,#f44336,#e91e63);padding:7px 16px;font-size:.8em">End Chat</button></div>
+</div>
+
+<div class="sc" id="s4">
+<div class="hd"><h1>Case Summary</h1><p>Case #<span id="rNum">0</span></p></div>
+<div class="cd" style="max-width:900px;margin:0 auto">
+<div id="rC"></div>
+<div class="audit-score" id="auditScoreBox" style="display:none"><div class="score-label">Audit Quality Score</div><div class="score-num" id="auditScoreNum">0</div><div style="color:#aaa;font-size:.75em">/100</div><div id="auditBreak" style="margin-top:8px;text-align:left;font-size:.73em"></div></div>
+<div id="dT" style="margin-top:12px"></div>
+<div style="margin-top:12px"><h3 style="color:#667eea;margin-bottom:7px">Timeline</h3><div class="tl" id="tln"></div></div>
+<div class="cd" style="background:#0d1520;border-color:#667eea;margin-top:12px"><h3 style="color:#667eea;margin-bottom:5px">Audit Log</h3><div id="auS" style="font-family:monospace;font-size:.73em;color:#aaa;max-height:160px;overflow-y:auto"></div></div>
+</div>
+<div style="text-align:center;margin-top:12px"><button class="btn" onclick="go(2)">New Case</button> <button class="btn" onclick="go(1)">Dashboard</button></div>
+</div>
+
+<script src="app.js"></script>
+</body></html>
