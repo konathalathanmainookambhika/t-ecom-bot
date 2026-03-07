@@ -9,12 +9,12 @@
 
 ### 📌 The Problem
 
-E-commerce platforms lose over $2B/year to seller support chaos- fragmented SOPs, compliance risks, and slow resolution rates due to complex procedures. Industry reports (McKinsey, BCG) estimate $1.8–$2.5B/year in lost revenue + support costs for Indian e-commerce due to poor seller experiences. With 32 lakh+ cases/year approximately demanding consistent quality, speed, and 100% audit compliance, the significant barriers are process complexity and quantity of cases handled completely manually. 
+India's e-commerce market is growing rapidly, yet seller support remains a massive bottleneck. Platforms handle millions of cases annually — largely manually — across complex SOPs and multiple Indian languages. Most cases are actually resolvable, but fragmented procedures, language barriers, compliance requirements, and manual processing drive up resolution times and operational costs at enormous scale.With approximately 32 lakh+ cases per year demanding consistent quality, speed, and 100% audit compliance, the significant barriers are process complexity and the quantity of cases handled completely manually.
 
 
 ### 💡 The Solution
 
-T-Ecom-Bot processes all seller cases as per SOP through an 8-agent governed pipeline — instantly matching the correct SOP, responding as per guidelines, managing case lifecycle, and auto-auditing quality — all in seconds with full decision transparency.
+T-Ecom-Bot solves this by processing every seller case through an 8-agent governed AI pipeline — detecting language and emotion, matching the correct SOP, scoring risk, enforcing guardrails, managing ticket lifecycle, and auto auditing quality — all in under 3 seconds with full decision transparency. AI resolves what it can, humans validate and intervene when needed. At scale, when millions of cases are handled through AI-governed automation instead of manual processing, even a moderate improvement in resolution speed and accuracy translates to significant operational cost savings — making seller support faster, auditable, and financially impactful for enterprises.
 
 ---
 
