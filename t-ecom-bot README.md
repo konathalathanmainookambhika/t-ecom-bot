@@ -9,11 +9,12 @@
 
 ### 📌 The Problem
 
-E-commerce platforms maintain multiple SOPs governing every seller interaction. For every case, associates must search through SOPs, find the correct one, extract resolution steps, and respond accurately — while simultaneously maintaining ACHT targets, quality scores, and audit compliance. This process is operationally complex at scale.
+E-commerce platforms lose over $2B/year to seller support chaos- fragmented SOPs, compliance risks, and slow resolution rates due to complex procedures. Industry reports (McKinsey, BCG) estimate $1.8–$2.5B/year in lost revenue + support costs for Indian e-commerce due to poor seller experiences. With 32 lakh+ cases/year approximately demanding consistent quality, speed, and 100% audit compliance, the significant barriers are process complexity and quantity of cases issues. 
+
 
 ### 💡 The Solution
 
-T-Ecom-Bot processes ALL seller cases as per SOP through an 8-agent governed pipeline — instantly matching the correct SOP, responding as per guidelines, managing case lifecycle, and auto-auditing quality — all in seconds with full decision transparency.
+T-Ecom-Bot processes all seller cases as per SOP through an 8-agent governed pipeline — instantly matching the correct SOP, responding as per guidelines, managing case lifecycle, and auto-auditing quality — all in seconds with full decision transparency.
 
 ---
 
@@ -144,7 +145,7 @@ API Gateway & Load Balancer ↓ Orchestrator Agent (routes, monitors, scales) �
 ---
 
 ### 👥 Team
-Thanmai Nookambhika Konathala
+Thanmai Nookambhika Konathala :
 Built for AI For Bharat Hackathon
 
 ### 📜 License
