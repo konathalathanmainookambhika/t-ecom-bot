@@ -9,7 +9,7 @@
 
 ### 📌 The Problem
 
-E-commerce platforms lose over $2B/year to seller support chaos- fragmented SOPs, compliance risks, and slow resolution rates due to complex procedures. Industry reports (McKinsey, BCG) estimate $1.8–$2.5B/year in lost revenue + support costs for Indian e-commerce due to poor seller experiences. With 32 lakh+ cases/year approximately demanding consistent quality, speed, and 100% audit compliance, the significant barriers are process complexity and quantity of cases issues. 
+E-commerce platforms lose over $2B/year to seller support chaos- fragmented SOPs, compliance risks, and slow resolution rates due to complex procedures. Industry reports (McKinsey, BCG) estimate $1.8–$2.5B/year in lost revenue + support costs for Indian e-commerce due to poor seller experiences. With 32 lakh+ cases/year approximately demanding consistent quality, speed, and 100% audit compliance, the significant barriers are process complexity and quantity of cases handled completely manually. 
 
 
 ### 💡 The Solution
